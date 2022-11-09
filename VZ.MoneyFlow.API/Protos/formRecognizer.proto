@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "VZ.MoneyFlow.FR.API";
+
+service GrpcFormRecognizer {
+	rpc RecognizeFile(FormRecognizeRequest) returns (FormRecognizeResponse);
+}
+
+message FormRecognizeRequest {
+	string file = 1;
+}
+
+message FormRecognizeResponse {
+	double total = 1;
+	string merchantName = 2;
+}

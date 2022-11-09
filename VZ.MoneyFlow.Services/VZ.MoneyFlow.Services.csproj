@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.AI.FormRecognizer" Version="4.0.0" />
+    <PackageReference Include="Azure.Identity" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VZ.MoneyFlow.EFData\VZ.MoneyFlow.EFData.csproj" />
+    <ProjectReference Include="..\VZ.MoneyFlow.FR.Models\VZ.MoneyFlow.FR.Models.csproj" />
+    <ProjectReference Include="..\VZ.MoneyFlow.IData\VZ.MoneyFlow.IData.csproj" />
+  </ItemGroup>
+
+</Project>
